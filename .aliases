@@ -1,0 +1,31 @@
+alias obs="flatpak run --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio"
+alias pipes.sh="pipes.sh && fastfetch -l small"
+alias grep='grep --color=auto'
+alias :q=exit
+alias zshrc='nvim ~/.zshrc'
+alias ver='fastfetch -c /home/burhan/.config/fastfetch/config-default.jsonc'
+alias osu-wine='~/.local/bin/osu-wine'
+alias :Q=exit
+alias icat="kitten icat"
+alias themes="kitten themes"
+alias ls="ls --color -a"
+alias vim="nvim"
+alias bashrc="nvim ~/.bashrc"
+alias hyprconf="nvim ~/.config/hypr/hyprland.conf"
+alias btopconf="nvim ~/.config/btop/btop.conf"
+alias .zshrc="clear && source ~/.zshrc"
+alias :x="exit"
+alias htop="btop"
+alias top="btop"
+alias ffrc="nvim ~/.config/fastfetch/config.jsonc"
+alias sd="shutdown now"
+alias re="reboot"
+alias srcinfo="makepkg --printsrcinfo >> .SRCINFO"
+alias aliases="nvim ~/.aliases"
+alias pacsearch="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+alias .bashrc="clear && source ~/.bashrc"
+alias rebf="systemctl reboot --firmware-setup"
+alias starconf="nvim ~/.config/starship.toml"
+alias pacfind="pacman -Q | grep"
+alias yay="paru"
+alias zsh-history="nvim ~/.zsh_history"
