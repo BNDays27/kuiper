@@ -19,6 +19,5 @@ return {
 
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
-
-  { 'norcalli/nvim-colorizer.lua', name = 'Neovim Colorizer', priority = 1000 },
+  { 'skammer/vim-css-color' },
 }
