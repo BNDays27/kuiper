@@ -6,17 +6,13 @@
     "source": "~/cover.png",
     "height": 11,
     "width": 20,
-//     "padding" : {
-//        "top": 1,
-//        "right": 2
-//     }
+
     },
     "display": {
         "separator": " "
     },
     "modules": [
     "break",
-//    "break",
         {
             "type": "title",
             "key": "╭─",
