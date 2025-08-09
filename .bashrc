@@ -13,3 +13,4 @@ eval "$(starship init bash)"
 fastfetch
 
 source ~/.aliases
+eval "$(zoxide init bash)"
