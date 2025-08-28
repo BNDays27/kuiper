@@ -3,9 +3,9 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "custom/music", "cava"],
+    "modules-left": ["hyprland/workspaces", "cava"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/swaync", "custom/power"],
+    "modules-right": ["custom/music", "pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/swaync", "custom/power"],
    
     "river/window": {
         "format": "{}",

@@ -55,6 +55,7 @@ source ~/.aliases
 
 zinit snippet OMZP::sudo
 zinit snippet OMZP::git
+zinit snippet OMZP::archlinux
 zinit snippet OMZP::tldr
 zinit snippet OMZP::git
 zinit snippet "https://github.com/catppuccin/zsh-syntax-highlighting/blob/main/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh"
@@ -86,3 +87,11 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 eval "$(zoxide init zsh)"
 source ~/.fzf
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
