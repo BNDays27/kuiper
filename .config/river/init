@@ -11,7 +11,7 @@
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
 # Super+Space opens Rofi
-riverctl map normal Super V spawn "pkill waybar && waybar"
+riverctl map normal Super V spawn "pkill waybar && waybar --config .config/waybar/config-river"
 
 # Sets it to my keyboard layout, which is british
 riverctl keyboard-layout gb
@@ -20,16 +20,19 @@ riverctl keyboard-layout gb
 riverctl map normal Super Delete spawn wlogout
 
 # Super+Space opens Rofi
-riverctl map normal Super Space spawn "rofi -show drun"
+riverctl map normal Super Space spawn "rofi -show drun || rofi -show drun"
 
 # Super+L opens Hyprlock
 riverctl map normal Super L spawn hyprlock
 
 # Opens waybar on startup
-riverctl spawn "waybar"
+riverctl spawn "waybar --config .config/waybar/config-river"
 
 riverctl spawn "hyprpaper"
 
+riverctl spawn "mpd"
+
+riverctl spawn "mpd-mpris"
 
 # Opens waybar on startup
 riverctl spawn "swaync"

@@ -1,4 +1,8 @@
-fastfetch
+if [[ "$TERM" != "xterm-kitty" && "$TERM" != "tmux-256color" ]]; then
+    fastfetch --config ~/.config/fastfetch/config-no-image.jsonc --logo small
+else
+    fastfetch
+fi
 # Created by newuser for 5.9
 
 ### Added by Zinit's installer

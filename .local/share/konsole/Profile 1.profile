@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Catppuccin-Mocha
-Font=JetBrains Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Font=JetBrainsMono Nerd Font Mono,10,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold
 
 [General]
 Name=Profile 1
