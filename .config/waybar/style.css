@@ -28,7 +28,7 @@
 }
 
 #workspaces button.active {
-  color: @sky;
+  color: @maroon;
   border-radius: 1rem;
 }
 
@@ -110,7 +110,11 @@
   margin-right: 1rem;
   border-radius: 1rem;
 }
+#cava {
+ margin-right: 1rem;
+  border-radius: 1rem;
 
+}
 
 #custom-swaync {
     color: @mauve;

@@ -56,7 +56,8 @@
     },
     "custom/music": {
         "format": "  {}",
-        "escape": true,
+        "format-alt": "󰏤 ({})",
+     	"escape": true,
         "interval": 5,
         "tooltip": false,
         "exec": "playerctl metadata --format='{{ title }} | {{artist}}'",
