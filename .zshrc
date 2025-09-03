@@ -84,7 +84,7 @@ export PATH=/home/burhan/.local/bin:/home/burhan/.local/share/zinit/polaris/bin:
 
 eval "$(starship init zsh)"
 export MANPAGER="nvim +Man!"
-export EDITOR=nvim
+export EDITOR="nvim"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"

@@ -101,7 +101,7 @@
 }
 
 #custom-power {
-    margin-right: 1rem;
+    margin-right: 0rem;
     border-radius: 0px 1rem 1rem 0px;
     color: @red;
 }
@@ -111,9 +111,10 @@
   border-radius: 1rem;
 }
 #cava {
- margin-right: 1rem;
   border-radius: 1rem;
-
+  margin: 5px;
+  background-color: @surface0;
+  margin-left: 1rem;
 }
 
 #custom-swaync {
