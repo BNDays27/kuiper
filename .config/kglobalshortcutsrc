@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-6ca383f6-b37f-42a0-9f64-eb8b8968c2fd=none,none,Switch to activity "Default"
 switch-to-activity-c9454042-7793-46f7-b140-4707abbd3d79=none,none,Switch to activity "Default"
 switch-to-activity-cc93ac35-786e-4066-8b03-20298cfa9382=none,none,Switch to activity "Default"
 
@@ -124,7 +125,7 @@ Window Fullscreen=none,,Make Window Fullscreen
 Window Grow Horizontal=none,,Expand Window Horizontally
 Window Grow Vertical=none,,Expand Window Vertically
 Window Lower=none,,Lower Window
-Window Maximize=none,Meta+PgUp,Maximise Window
+Window Maximize=Meta+Up,Meta+PgUp,Maximise Window
 Window Maximize Horizontal=none,,Maximise Window Horizontally
 Window Maximize Vertical=none,,Maximise Window Vertically
 Window Minimize=none,Meta+PgDown,Minimise Window
