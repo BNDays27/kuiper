@@ -20,11 +20,11 @@
             "keyColor": "blue"
         },
 
-        {
-            "type": "host",
-            "key": "├─󰌢",
-            "keyColor": "green"
-        },
+//        {
+//            "type": "host",
+//            "key": "├─󰌢",
+//            "keyColor": "green"
+//        },
         {
             "type": "cpu",
             "key": "├─󰻠",
