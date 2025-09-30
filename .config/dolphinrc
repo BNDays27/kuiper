@@ -1,6 +1,10 @@
 [DetailsMode]
 PreviewSize=22
 
+[ExtractDialog]
+2560x1440 screen: Height=720
+2560x1440 screen: Width=1576
+
 [General]
 Version=202
 ViewPropsTimestamp=2025,8,18,18,14,56.284

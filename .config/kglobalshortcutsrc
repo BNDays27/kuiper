@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-095c4225-b36a-4813-a97d-1126308205d9=none,none,Switch to activity "Default"
 switch-to-activity-6ca383f6-b37f-42a0-9f64-eb8b8968c2fd=none,none,Switch to activity "Default"
 switch-to-activity-c9454042-7793-46f7-b140-4707abbd3d79=none,none,Switch to activity "Default"
 switch-to-activity-cc93ac35-786e-4066-8b03-20298cfa9382=none,none,Switch to activity "Default"
@@ -208,6 +209,57 @@ playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
+
+[org.chromium.Chromium]
+2D5CEFFA869AE01FB922776585F17C2F-enter-picker-mode=none,none,Create a custom filter
+2D5CEFFA869AE01FB922776585F17C2F-enter-zapper-mode=none,none,Enter element zapper mode
+6434A9BDF31C7A5657804367347C9E05-addSite=none,none,Toggle current site
+6434A9BDF31C7A5657804367347C9E05-switchEngine=none,none,Theme generation mode
+6434A9BDF31C7A5657804367347C9E05-toggle=none,none,Toggle extension
+788AA273E5891E202420F360C76207B7-c000-options-page=none,none,Open the options page
+788AA273E5891E202420F360C76207B7-c020-theme-youtube-dark=none,none,Theme: YouTube™ (Dark)
+788AA273E5891E202420F360C76207B7-c025-theme-enhanced-dark=none,none,Theme: Enhancer for YouTube™
+788AA273E5891E202420F360C76207B7-c030-theme-youtube-deep-dark=none,none,Theme: YouTube-DeepDark
+788AA273E5891E202420F360C76207B7-c040-theme-youtube-deep-dark-custom=none,none,Theme: YouTube-DeepDark (Custom)
+788AA273E5891E202420F360C76207B7-c050-theme-custom-theme=none,none,Theme: Custom theme
+788AA273E5891E202420F360C76207B7-c060-focus-video-player=none,none,Set focus on the video player
+788AA273E5891E202420F360C76207B7-c070-toggle-loop=none,none,Toggle the loop mode
+788AA273E5891E202420F360C76207B7-c080-stop-video=none,none,Stop the video
+788AA273E5891E202420F360C76207B7-c090-reverse-playlist=none,none,Reverse the playlist order
+788AA273E5891E202420F360C76207B7-c100-toggle-volume-booster=none,none,Toggle the volume booster
+788AA273E5891E202420F360C76207B7-c130-toggle-annotations=none,none,Toggle info cards and end screens visibility
+788AA273E5891E202420F360C76207B7-c140-toggle-cinema-mode=none,none,Toggle the cinema mode
+788AA273E5891E202420F360C76207B7-c150-toggle-player-size=none,none,Expand or shrink the video player
+788AA273E5891E202420F360C76207B7-c160-center-video-player=none,none,Centre the video player within the viewport
+788AA273E5891E202420F360C76207B7-c170-pop-up-player=none,none,Watch with the pop-up player
+788AA273E5891E202420F360C76207B7-c180-decrease-speed=none,none,Decrease the playback speed
+788AA273E5891E202420F360C76207B7-c190-increase-speed=none,none,Increase the playback speed
+788AA273E5891E202420F360C76207B7-c200-default-speed=none,none,Select the default playback speed
+788AA273E5891E202420F360C76207B7-c210-normal-speed=none,none,Select the normal playback speed
+788AA273E5891E202420F360C76207B7-c220-toggle-video-filters=none,none,Toggle the video filters
+788AA273E5891E202420F360C76207B7-c230-flip-horizontally=none,none,Flip the video horizontally
+788AA273E5891E202420F360C76207B7-c240-flip-vertically=none,none,Flip the video vertically
+788AA273E5891E202420F360C76207B7-c250-take-screenshot=none,none,Take a screenshot of the video
+788AA273E5891E202420F360C76207B7-c260-keyboard-shortcuts=none,none,Display all the keyboard shortcuts for YouTube
+788AA273E5891E202420F360C76207B7-c270-custom-script=none,none,Execute the custom script
+788AA273E5891E202420F360C76207B7-c280-picture-in-picture=none,none,Toggle the Picture-in-Picture mode
+788AA273E5891E202420F360C76207B7-c290-quality-highres=none,none,Select the playback quality ‘4320p’
+788AA273E5891E202420F360C76207B7-c300-quality-hd2880=none,none,Select the playback quality ‘2880p’
+788AA273E5891E202420F360C76207B7-c310-quality-hd2160=none,none,Select the playback quality ‘2160p’
+788AA273E5891E202420F360C76207B7-c320-quality-hd1440=none,none,Select the playback quality ‘1440p’
+788AA273E5891E202420F360C76207B7-c330-quality-hd1080=none,none,Select the playback quality ‘1080p’
+788AA273E5891E202420F360C76207B7-c340-quality-hd720=none,none,Select the playback quality ‘720p’
+788AA273E5891E202420F360C76207B7-c350-quality-large=none,none,Select the playback quality ‘480p’
+788AA273E5891E202420F360C76207B7-c360-quality-medium=none,none,Select the playback quality ‘360p’
+788AA273E5891E202420F360C76207B7-c370-quality-small=none,none,Select the playback quality ‘240p’
+788AA273E5891E202420F360C76207B7-c380-quality-tiny=none,none,Select the playback quality ‘144p’
+788AA273E5891E202420F360C76207B7-c390-quality-auto=none,none,Select the playback quality ‘Auto’
+788AA273E5891E202420F360C76207B7-c400-comments-visibility=none,none,Toggle comments visibility
+788AA273E5891E202420F360C76207B7-c410-related-videos-visibility=none,none,Toggle related videos visibility
+DA745E07FBBAF836A121EAF61D4E44F9-openManage=none,none,Manage
+DA745E07FBBAF836A121EAF61D4E44F9-reload=none,none,Reload
+DA745E07FBBAF836A121EAF61D4E44F9-styleDisableAll=none,none,Turn all styles off
+_k_friendly_name=org.chromium.Chromium
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness

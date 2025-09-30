@@ -36,7 +36,6 @@ zinit ice depth=1; zinit light rylnd/shpec
 zinit ice depth=1; zinit light chrissicool/zsh-256color
 zinit ice depth=1; zinit light MichaelAquilina/zsh-you-should-use
 
-
 ### End of Zinit's installer chunk
 
 
@@ -89,7 +88,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 source ~/.fzf
 
 function y() {
