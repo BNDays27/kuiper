@@ -11,6 +11,7 @@ configuration{
     display-run: "Run";
     display-window: "Window";
     sidebar-mode: true;
+    modes: [run,window,combi,drun,games];
 }
 
 @theme "catppuccin-mocha"
