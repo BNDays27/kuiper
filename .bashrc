@@ -15,3 +15,4 @@ fastfetch
 source ~/.aliases
 eval "$(zoxide init bash)"
 source ~/.fzf
+EDITOR=nvim
