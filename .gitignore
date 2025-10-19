@@ -1,5 +1,4 @@
 .config/mpd/mpd.db
-:q
 .config/mpd/mpd.log
 .config/mpd/mpd.pig
 .config/mpd/mpdstate
