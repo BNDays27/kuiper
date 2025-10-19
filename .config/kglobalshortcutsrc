@@ -260,6 +260,13 @@ stopmedia=Media Stop,Media Stop,Stop media playback
 DA745E07FBBAF836A121EAF61D4E44F9-openManage=none,none,Manage
 DA745E07FBBAF836A121EAF61D4E44F9-reload=none,none,Reload
 DA745E07FBBAF836A121EAF61D4E44F9-styleDisableAll=none,none,Turn all styles off
+E27925019365FF8B744AE75B8470CB28-launch-element-picker=none,none,Enter element picker mode
+E27925019365FF8B744AE75B8470CB28-launch-element-zapper=none,none,Enter element zapper mode
+E27925019365FF8B744AE75B8470CB28-launch-logger=none,none,Open the logger
+E27925019365FF8B744AE75B8470CB28-open-dashboard=none,none,Open the dashboard
+E27925019365FF8B744AE75B8470CB28-relax-blocking-mode=none,none,Relax blocking mode
+E27925019365FF8B744AE75B8470CB28-toggle-cosmetic-filtering=none,none,Toggle cosmetic filtering
+E27925019365FF8B744AE75B8470CB28-toggle-javascript=none,none,Toggle JavaScript
 _k_friendly_name=org.chromium.Chromium
 
 [org_kde_powerdevil]

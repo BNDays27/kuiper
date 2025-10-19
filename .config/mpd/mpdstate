@@ -1,0 +1,19 @@
+sw_volume: 100
+audio_device_state:1:PipeWire Sound Server
+audio_device_state:1:my_fifo
+audio_device_state:1:HTTP Stream
+state: pause
+current: 1
+time: 70.755
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:cars/Sheryl Crow - Real Gone.flac
+1:cars/Sheryl Crow - Real Gone.flac
+playlist_end
