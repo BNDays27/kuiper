@@ -27,7 +27,7 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 # custom plugins
-zinit ice depth=1; zinit light fdellwing/zsh-bat
+# zinit ice depth=1; zinit light fdellwing/zsh-bat
 zinit ice depth=1; zinit light zsh-users/zsh-history-substring-search
 zinit ice depth=1; zinit light zsh-users/zsh-autosuggestions
 zinit ice depth=1; zinit light zsh-users/zsh-syntax-highlighting
@@ -87,6 +87,7 @@ export EDITOR="nvim"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_STATE_HOME="$HOME/.local/state"
 eval "$(zoxide init --cmd cd zsh)"
 source ~/.fzf
