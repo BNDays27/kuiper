@@ -18,6 +18,9 @@ playerctl metadata -F -f '{{playerName}}|{{title}}|{{artist}}|{{mpris:artUrl}}|{
         tmp_image="${image_file}.tmp"
         if wget -q -O "$tmp_image" "$artUrl"; then
             mv "$tmp_image" "$image_file"
+        elif [[ "$artUrl" == file://* ]]; then
+        tmp_image2= $(echo "$artUrl" | sed 's|file://||g')
+        cp $tmp_image2 $image_file
         else
             rm -f "$image_file"
             cp "${base_dir}scripts/cover.png" "$image_file"
