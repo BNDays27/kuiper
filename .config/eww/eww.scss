@@ -8,7 +8,7 @@
 .bar{
   box-shadow: 0 2px 3px 1px rgba(6,6,11,0.9);
   border-radius: 10px;
-  background-color: rgba(24,24,37,0.94);
+  background-color: rgba(30,30,46,0.94);
   padding: 5px;
   margin:6.5px;
 }
@@ -18,7 +18,7 @@
 }
 
 .menu-eventbox{
-  color:#1793d1;
+  color:#89b4fa;
   transition: color 0.3s;
   &:hover{
     color:#cdd6f4;
@@ -30,13 +30,13 @@
 }
 
 .power-eventbox{
-  color:rgb(230,100,100);
+  color:rgb(243, 139, 168);
   font-weight:bold;
   font-size:20px;
   font-family: "JetBrainsMono Nerd Font";
   transition: color 0.3s;
   &:hover{
-    color:rgb(245,162,96);
+    color:rgb(250, 179, 135);
   }
 }
 
@@ -112,7 +112,7 @@
 }
 
 .systray-shadow{
-  background-color:rgba(0,0,0,0.38);
+  background-color:rgba(17,17,27,0.38);
   margin-right:5px;
   margin-top:3px;
   margin-bottom:3px;
@@ -147,7 +147,7 @@ menu {
   background-color:rgba(0,0,0,0.38);
   padding-left: 13px;
   padding-right: 13px;
-  color:rgb(245,162,96);
+  color:rgb(250, 179, 135);
   border-radius:20px;
   font-size:11px;
   margin:3px 0px;
@@ -276,7 +276,7 @@ menu {
 }
 
 .time-inner{
-  color:rgb(48,100,170);
+  color:rgb(116, 199, 236);
   font-size:50px;
   margin-left:4px;
   margin-top:10px;
@@ -319,7 +319,7 @@ menu {
 }
 
 .main-container, .music-container, .cpu-container{
-  box-shadow: 0 2px 3px 2px #06060b;
+  box-shadow: 0 2px 3px 2px #1e1e2e;
   margin:5.5px;
   border-radius: 20px;
   min-width:385px;
@@ -367,7 +367,7 @@ menu {
 
 .username{
   font-size:30px;
-  color:rgb(48,100,170);
+  color:rgb(137, 180, 250);
 }
 
 .uptime{
@@ -403,7 +403,7 @@ menu {
 }
 
 .shutdown{
-  color:#e06c75;
+  color:#ed8796;
   transition:color 0.3s;
   &:hover{
     color:#f38b91;
@@ -411,7 +411,7 @@ menu {
 }
 
 .logout{
-  color:#d19a66;
+  color:#f5a97f;
   transition:color 0.3s;
   &:hover{
     color:#e5b07b;
@@ -419,7 +419,7 @@ menu {
 }
 
 .lockscr{
-  color:#61afef;
+  color:#7dc4e4;
   transition:color 0.3s;
   &:hover{
     color:#79c0ff;
@@ -427,7 +427,7 @@ menu {
 }
 
 .reboot{
-  color:#c678dd;
+  color:#c6a0f6;
   transition: color 0.3s;
   &:hover{
     color:#d896f0;
@@ -435,7 +435,7 @@ menu {
 }
 
 .suspend{
-  color:#56b6c2;
+  color:#7dc4e4;
   transition:color 0.3s;
   &:hover{
     color:#6edddf;
@@ -443,7 +443,7 @@ menu {
 }
 
 .hibernate {
-  color: #5fb3b3;
+  color: #b7bdf8;
   transition: color 0.3s;
   &:hover {
     color: #a1e3e3;
@@ -467,15 +467,15 @@ tooltip{
 }
 
 .BAT1, .BAT2, .BAT3{
-  color: #2ECC71;
+  color: #a6da95;
 }
 
 .BAT4, .BAT5{
-  color:#E74C3C;
+  color:#ed8796;
 }
 
 .CHARGING{
-  color: #F1C40F;
+  color: #eed49f;
 }
 
 .batico-main{
@@ -532,9 +532,9 @@ tooltip{
   border-radius:100px;
   margin-top:20px;
 }
-.cpu, .cpu01{ color: #FF6B6B;}
-.ram, .ram01{ color: #4D9FEC; }
-.disk, .disk01{ color: #43E97B; }
+.cpu, .cpu01{ color: #ed8796;}
+.ram, .ram01{ color: #8aadf4; }
+.disk, .disk01{ color: #a6da95; }
 .cpu02, .ram02, .disk02{ color: rgb(205,212,246); }
 
 .ramico, .diskico, .cpuico{
@@ -579,6 +579,7 @@ tooltip{
 }
 
 .volume-slider{
+  color:rgb(198, 160, 246);
   margin-top:10px;
   margin-left:13px;
 }
@@ -605,7 +606,7 @@ tooltip{
 }
 
 .volume-slider,.volume-short{
-  color:rgb(144, 104, 190);
+  color:rgb(198, 160, 246);
 }
 
 .lig trough {
@@ -625,7 +626,7 @@ tooltip{
 }
 
 .light-slider{
-  color:rgb(219,193,117);
+  color:rgb(238, 212, 159);
 }
 
 .clear-container{
