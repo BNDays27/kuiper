@@ -102,7 +102,8 @@ zstyle ':completion:*' menu no
 export PATH=/home/burhan/.local/bin:/home/burhan/.local/share/zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.toml)"
 export MANPAGER="nvim +Man!"
 export EDITOR="nvim"
 export XDG_CACHE_HOME="$HOME/.cache"

@@ -37,3 +37,4 @@ alias less="nvim"
 alias ..="cd .."
 alias pacremove="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
 alias yaysearch='paru -Slq | fzf --multi --preview '\''paru -Si {1}'\'' | xargs -ro paru -S'
+alias omprc='nvim ~/.config/oh-my-posh/config.toml'
