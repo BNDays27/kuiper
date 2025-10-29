@@ -1,4 +1,4 @@
-# my aliases, some will not be included here as they are bash/zsh specific, so check my bashrc/zshrc to find or change them
+# most of my aliases, some will not be included here as they are bash/zsh specific, so check the bashrc/zshrc to find or change them
 
 alias obs="flatpak run --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio"
 alias pipes.sh="pipes.sh && fastfetch -l small"
