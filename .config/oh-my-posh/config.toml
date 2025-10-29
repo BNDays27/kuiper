@@ -4,13 +4,13 @@ final_space = true
 
 [secondary_prompt]
   template = '❯❯ '
-  foreground = 'magenta'
+  foreground = 'p:green'
   background = 'transparent'
 
 [transient_prompt]
   template = '❯ '
   background = 'transparent'
-  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}magenta{{end}}']
+  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}green{{end}}']
 
 [[blocks]]
   type = 'prompt'
@@ -18,8 +18,8 @@ final_space = true
   newline = false
 
   [[blocks.segments]]
-    template = '{{ .Path }}'
-    foreground = 'blue'
+    template = '{{.Path}}'
+    foreground = 'p:mauve'
     background = 'transparent'
     type = 'path'
     style = 'plain'
@@ -28,9 +28,15 @@ final_space = true
       cache_duration = 'none'
       style = 'full'
 
+  [[blocks]]
+  type = 'prompt'
+  alignment = 'right'
+  newline = false
+
+
   [[blocks.segments]]
     template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>'
-    foreground = 'p:grey'
+    foreground = 'p:yellow'
     background = 'transparent'
     type = 'git'
     style = 'plain'
@@ -59,14 +65,42 @@ final_space = true
 [[blocks]]
   type = 'prompt'
   alignment = 'left'
-  newline = true
+  newline = false
 
   [[blocks.segments]]
     template = '❯'
     background = 'transparent'
     type = 'text'
     style = 'plain'
-    foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}magenta{{end}}']
+    foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}green{{end}}']
 
     [blocks.segments.properties]
       cache_duration = 'none'
+
+[palette]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
