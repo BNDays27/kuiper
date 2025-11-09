@@ -20,7 +20,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Installs all of the dependencies and other stuff I use
-sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch --needed --noconfirm
+sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc mpd-mpris --needed --noconfirm
 
 # Installs the QT theme for KDE, I use Catppuccin so its catppuccin/kde
 mkdir $HOME/.git
@@ -37,6 +37,9 @@ cd catppuccin-gtk/themes
 
 # So Flatpaks use the GTK theme
 sudo flatpak override --filesystem=$HOME/.themes
+
+# So mpd and mpd-mpris launch now and on startup
+systemctl enable --now mpd mpd-mpris
 
 # Btop theme, again uses Catppuccin, but this time im symlinking because that's easier
 cd $HOME/.git
