@@ -20,7 +20,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Installs all of the dependencies and other stuff I use
-sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc mpd-mpris --needed --noconfirm
+sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc mpd-mpris steam hyprpicker wlogout --needed --noconfirm
 
 # Installs the QT theme for KDE, I use Catppuccin so its catppuccin/kde
 mkdir $HOME/.git
