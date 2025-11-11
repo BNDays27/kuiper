@@ -20,7 +20,15 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Installs all of the dependencies and other stuff I use
-sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc mpd-mpris steam hyprpicker wlogout --needed --noconfirm
+sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc mpd-mpris steam hyprpicker wlogout power-profiles-daemon noto-fonts-cjk spotify spicetify-cli spicetify-marketplace papirus-icon-theme --needed --noconfirm
+
+# installing AUR packages with paru
+paru -S btop-theme-catppuccin plymouth-theme-catppuccin-mocha-git papirus-folders-catppuccin-git --noconfirm catppuccin-sddm-theme-mocha --needed
+
+# sets Papirus' & Plymouth's theme to Catppuccin Mocha
+plymouth-set-default-theme -R catppuccin-mocha
+papirus-icon-theme -C cat-mocha-mauve --theme Papirus-Dark
+
 
 # Installs the QT theme for KDE, I use Catppuccin so its catppuccin/kde
 mkdir $HOME/.git
@@ -53,4 +61,5 @@ chsh -s /bin/zsh
 cd $SCRIPT_DIR
 rm -rf $HOME/.config/*
 stow .
-echo "okay, we're done, have a fun time using the dots!"
+echo "okay, we're done, have a fun time using the dots!
+You will need to set up Spotify & spicetify manually, as there's no way for me to set it up manually"

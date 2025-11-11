@@ -9,7 +9,6 @@
 
 
 
-    on_song_change: ["~/.config/rmpc/increment_play_count"], 
     volume_step: 5,
     max_fps: 30,
     scrolloff: 0,
@@ -189,7 +188,7 @@ cava: (
             pane: Split(
 
                 direction: Horizontal,
-                panes: [(size: "25%", pane: Pane(AlbumArt)), (size: "70%", pane: Pane(Lyrics), vertical_align: Bottom)],
+                panes: [(size: "25%", pane: Pane(AlbumArt), vertical_align: Top), (size: "70%", pane: Pane(Lyrics), vertical_align: Bottom)],
             ),
         ),
     ],

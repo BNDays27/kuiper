@@ -303,7 +303,7 @@
     (button-module :class "menu"
                    :subclass "menu-eventbox"
                    :icon " "
-                   :cmd "rofi -show drun"
+                   :cmd "kitty paru"
     )
 )
 

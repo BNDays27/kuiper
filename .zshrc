@@ -29,6 +29,7 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
+
 # Completion styling
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'   
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -69,6 +70,7 @@ bindkey '^[[1;5D' backward-word
 bindkey '^p' history-substring-search-up
 bindkey '^n' history-substring-search-down
 bindkey '^f' autosuggest-accept
+bindkey '^[[1;5C' autosuggest-accept
 
 ### ZSH aliases
 source ~/.aliases
