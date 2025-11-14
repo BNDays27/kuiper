@@ -6,20 +6,18 @@
 # just prefacing here you will need to be near your pc as this script won't automatically install stuff like your QT theme, so be ready to change anything
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-echo "hey! You will need to be alert for the install, some of this isn't automatic so don't go make a coffee or something when installing this
-1. Cool, I can do that right now
-2. damn, that aint gonna be possible"
+clear
+echo "hey! You will need to be alert for the install, some of this isn't automatic so don't go make a coffee or something when installing this (y/N)"
 read option
 
-accept=1
-
-if [$(echo $option) == $(echo $accept)]; then
+if [[ $option = "y" ]]; then
 	echo "cool, have fun!"
 	exit 0
 else
 	echo "well then bye"
 	exit 0
 fi
+clear
 
 # Installs the Chaotic AUR repo since I use it to install stuff like Zen and ungoogled chromium easier
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
