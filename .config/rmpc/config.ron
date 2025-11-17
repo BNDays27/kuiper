@@ -188,7 +188,22 @@ cava: (
             pane: Split(
 
                 direction: Horizontal,
-                panes: [(size: "40%", pane: Pane(AlbumArt), vertical_align: Top), (size: "70%", pane: Pane(Lyrics), vertical_align: Bottom)],
+                panes: [
+
+                (size: "40%", pane: Pane(AlbumArt), vertical_align: Top), 
+
+                (size: "60%", pane: Split(
+
+                    direction: Vertical,
+
+                    panes: [
+                        (size: "75%", pane: Pane(Lyrics), vertical_align: bottom),
+
+                        (size: "25%", pane: Pane(Cava)),
+
+                    ],
+
+                ))                ],
             ),
         ),
     ],
