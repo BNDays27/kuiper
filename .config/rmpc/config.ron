@@ -197,6 +197,27 @@ cava: (
                     direction: Vertical,
 
                     panes: [
+                        (size: "5%", pane: Pane(Property(
+
+    content: [
+        (kind: Property(Song(Artist)),) ,
+
+        (kind: Text(" - ")),
+
+        (kind: Property(Song(Title))),
+
+        (kind: Group([
+
+        ])),
+
+    ],
+
+    align: Center,
+
+    scroll_speed: 1,
+
+)), vertical_align: bottom),
+
                         (size: "75%", pane: Pane(Lyrics), vertical_align: bottom),
 
                         (size: "25%", pane: Pane(Cava)),
