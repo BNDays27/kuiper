@@ -24,7 +24,7 @@
     highlight_border_style: (fg: "#cba6f7"),
     symbols: (
         song: "󰝚",
-        dir: "",
+        dir: "󰀥",
         playlist: "󰲸",
         marker: "M",
         ellipsis: "...",
@@ -40,11 +40,11 @@
         trace: (fg: "magenta", bg: "black"),
     ),
     progress_bar: (
-        symbols: ["[", "", "","", "]"],
+        symbols: ["[", "-", "","", "]"],
         track_style: (fg: "#1e2030"),
         elapsed_style: (fg: "#cba6f7"),
         thumb_style: (fg: "#cba6f7", bg: "#1e2030"),
-        use_track_when_empty: false,
+        use_track_when_empty: true,
     ),
     scrollbar: (
         symbols: ["│", "█", "", "󰅀"],
@@ -83,10 +83,10 @@
     layout: Split(
         direction: Vertical,
         panes: [
-            (
-                pane: Pane(Header),
-                size: "2",
-            ),
+        //    (
+        //        pane: Pane(Header),
+        //        size: "2",
+        //    ),
             (
                 pane: Pane(Tabs),
                 size: "3",
@@ -110,8 +110,8 @@
                     (kind: Text("]"), style: (fg: "#a6e3a1", modifiers: "Bold"))
                 ],
                 center: [
-                    (kind: Property(Song(Title)), style: (fg: "#f9e2af", modifiers: "Bold"),
-                        default: (kind: Text("No Song"), style: (modifiers: "Bold"))
+                    (kind: Property(Song(Album)), style: (modifiers: "Bold"),
+                        default: (kind: Text("Unknown Album"), style: (modifiers: "Bold"))
                     )
                 ],
                 right: [
@@ -133,8 +133,8 @@
                         default: (kind: Text("Unknown"), style: (fg: "#fab387", modifiers: "Bold"))
                     ),
                     (kind: Text(" - ")),
-                    (kind: Property(Song(Album)), style: (modifiers: "Bold"),
-                        default: (kind: Text("Unknown Album"), style: (modifiers: "Bold"))
+                    (kind: Property(Song(Title)), style: (fg: "#f9e2af", modifiers: "Bold"),
+                        default: (kind: Text("No Song"), style: (modifiers: "Bold"))
                     )
                 ],
                 right: [

@@ -32,10 +32,12 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Installs all of the dependencies and other stuff I use
-sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc steam hyprpicker wlogout power-profiles-daemon noto-fonts-cjk spotify spicetify-cli spicetify-marketplace papirus-icon-theme sddm --needed --noconfirm
+sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc steam hyprpicker wlogout power-profiles-daemon noto-fonts-cjk spotify spicetify-cli spicetify-marketplace papirus-icon-theme sddm mpd-mpris --needed --noconfirm
 
 # installing AUR packages with paru
-paru -S btop-theme-catppuccin mpdris2 plymouth-theme-catppuccin-mocha-git papirus-folders-catppuccin-git catppuccin-sddm-theme-mocha --noconfirm --needed
+paru -S btop-theme-catppuccin plymouth-theme-catppuccin-mocha-git papirus-folders-catppuccin-git catppuccin-sddm-theme-mocha --noconfirm --needed
+
+sudo chown $USER /tmp/mpd_mpris
 
 # sets Papirus' & Plymouth's theme to Catppuccin Mocha (specifically mauve for papirus)
 plymouth-set-default-theme -R catppuccin-mocha
@@ -59,7 +61,8 @@ cd catppuccin-gtk/themes
 sudo flatpak override --filesystem=$HOME/.themes
 
 # So mpd and mpd-mpris launch now and on startup
-systemctl enable --now mpd mpDris2
+systemctl enable mpd mpd-mpris
+systemctl enable --now mpd mpd-mpris
 
 # changes the shell to zsh, you CAN use bash if you want but I dont use it, so i just have my aliases in there, the OMP theme, the fastfetch thing and that's it
 chsh -s /bin/zsh

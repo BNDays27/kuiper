@@ -147,8 +147,17 @@ cava: (
                 (size: "40%", pane: Split(
                     direction: Vertical,
                     panes: [
-                       (size: "95%", pane: Pane(AlbumArt), vertical_align: top),
-                         
+                       (size: "80%", pane: Pane(AlbumArt), vertical_align: top),
+  
+    (size: "1", pane: Pane(Property(
+
+    content: [
+        (kind: Property(Song(Album)), style: (modifiers: "Bold"),
+                        default: (kind: Text("Unknown Album"), style: (modifiers: "Bold"))
+                    )
+                                ],
+                                    align: Center,)), vertical_align: top),
+
                         (size: "1", pane: Pane(Property(
 
     content: [
@@ -215,19 +224,20 @@ cava: (
                 direction: Horizontal,
                 panes: [
 
-                (size: "40%", pane: Pane(AlbumArt), vertical_align: Top), 
 
-                (size: "60%", pane: Split(
+                (size: "40%", pane: Split(
 
-                    direction: Vertical,
+                direction: Vertical,
 
-                    panes: [
+                        panes: [
+                        
+   (size: "80%", pane: Pane(AlbumArt), vertical_align: Top), 
 
-                                                    (size: "2%", pane: Pane(Property(
+                        (size: "2%", pane: Pane(Property(
 
     content: [
         (kind: Property(Song(Album)), style: (modifiers: "Bold"),
-                        default: (kind: Text("No Album"), style: (modifiers: "Bold"))
+                        default: (kind: Text("Unknown Album"), style: (modifiers: "Bold"))
                     ) ,
     ],
 
@@ -255,9 +265,16 @@ cava: (
     scroll_speed: 1,
 
 )), vertical_align: bottom),
+                        ]
 
-                        (size: "75%", pane: Pane(Lyrics), vertical_align: bottom),
+                    ),), 
 
+                (size: "60%", pane: Split(
+
+                    direction: Vertical,
+
+                    panes: [
+                        (size: "75%", pane: Pane(Lyrics), vertical_align: Top),
                         (size: "25%", pane: Pane(Cava)),
 
                     ],

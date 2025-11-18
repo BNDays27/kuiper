@@ -96,15 +96,18 @@
             "key": "├─󰏖",
             "keyColor": "blue"
         },
-//        {
-//            "type": "media",
-//            "key": "├─󰝚",
-//            "keyColor": "blue"
-//        },
+
         {
             "type": "uptime",
             "key": "╰─",
             "keyColor": "blue"
-        }
+        },
+
+        {
+            "type": "media",
+            "key": "  󰝚",
+            "keyColor": "blue"
+        },
+
     ]
 }
