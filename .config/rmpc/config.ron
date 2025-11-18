@@ -2,15 +2,12 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
+    theme: Some("~/.config/rmpc/catppuccin-mocha.ron"),
     cache_dir: Some("~/.tmp/rmpc/cache"),
     lyrics_dir: Some("~/Music"),
     password: None,
-
-
-
-
     volume_step: 5,
-    max_fps: 30,
+    max_fps: 180,
     scrolloff: 0,
     wrap_navigation: false,
     enable_mouse: true,
@@ -38,6 +35,7 @@
             "4":       SwitchToTab("Search"),
             "5":       SwitchToTab("Directories"),
             "6":       SwitchToTab("Lyrics"),
+            "7":       SwitchToTab("Visualizer"),
             "q":       Quit,
             ">":       NextTrack,
             "p":       TogglePause,
@@ -200,11 +198,13 @@ cava: (
                         (size: "5%", pane: Pane(Property(
 
     content: [
-        (kind: Property(Song(Artist)),) ,
+        (kind: Property(Song(Artist)), style: (fg: "#fab387", modifiers: "Bold"),
+                        default: (kind: Text("Unknown"), style: (fg: "#fab387", modifiers: "Bold"))
+                    ) ,
 
         (kind: Text(" - ")),
 
-        (kind: Property(Song(Title))),
+        (kind: Property(Song(Title)), style: (fg: "#f9e2af", modifiers: "Bold")),
 
         (kind: Group([
 
@@ -213,7 +213,6 @@ cava: (
     ],
 
     align: Center,
-
     scroll_speed: 1,
 
 )), vertical_align: bottom),
@@ -227,5 +226,17 @@ cava: (
                 ))                ],
             ),
         ),
+ 
+
+        (
+
+        name: "Visualizer",
+
+        pane: Pane(Cava),
+
+    ),
+
+
     ],
+
 )
