@@ -40,7 +40,7 @@
         trace: (fg: "magenta", bg: "black"),
     ),
     progress_bar: (
-        symbols: ["[", "■", "","", "]"],
+        symbols: ["[", "", "","", "]"],
         track_style: (fg: "#1e2030"),
         elapsed_style: (fg: "#cba6f7"),
         thumb_style: (fg: "#cba6f7", bg: "#1e2030"),
@@ -66,8 +66,8 @@
             width: "35%",
         ),
         (
-            prop: (kind: Property(Album), style: (fg: "white"),
-                default: (kind: Text("Unknown Album"), style: (fg: "white"))
+            prop: (kind: Property(Album), style: (fg: "white", modifiers: "Bold"),
+                default: (kind: Text("Unknown Album"), style: (fg: "white", modifiers: "Bold"))
             ),
             width: "30%",
         ),
@@ -97,7 +97,7 @@
             ),
             (
                 pane: Pane(ProgressBar),
-                size: "2",
+                size: "1",
             ),
         ],
     ),
@@ -133,8 +133,8 @@
                         default: (kind: Text("Unknown"), style: (fg: "#fab387", modifiers: "Bold"))
                     ),
                     (kind: Text(" - ")),
-                    (kind: Property(Song(Album)),
-                        default: (kind: Text("Unknown Album"))
+                    (kind: Property(Song(Album)), style: (modifiers: "Bold"),
+                        default: (kind: Text("Unknown Album"), style: (modifiers: "Bold"))
                     )
                 ],
                 right: [

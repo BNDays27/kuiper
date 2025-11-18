@@ -30,12 +30,12 @@
             "<Tab>":   NextTab,
             "<S-Tab>": PreviousTab,
             "1":       SwitchToTab("Queue"),
-            "2":       SwitchToTab("Artists"),
-            "3":       SwitchToTab("Albums"),
-            "4":       SwitchToTab("Search"),
-            "5":       SwitchToTab("Directories"),
-            "6":       SwitchToTab("Lyrics"),
-            "7":       SwitchToTab("Visualizer"),
+ //          "2":       SwitchToTab("Artists"),
+            "2":       SwitchToTab("Albums"),
+            "3":       SwitchToTab("Search"),
+//            "5":       SwitchToTab("Directories"),
+            "4":       SwitchToTab("Lyrics"),
+            "5":       SwitchToTab("Visualizer"),
             "q":       Quit,
             ">":       NextTrack,
             "p":       TogglePause,
@@ -144,7 +144,34 @@ cava: (
 
             panes: [
 
-                (size: "40%", pane: Pane(AlbumArt)),
+                (size: "40%", pane: Split(
+                    direction: Vertical,
+                    panes: [
+                       (size: "95%", pane: Pane(AlbumArt), vertical_align: top),
+                         
+                        (size: "1", pane: Pane(Property(
+
+    content: [
+        (kind: Property(Song(Artist)), style: (fg: "#fab387", modifiers: "Bold"),
+                        default: (kind: Text("Unknown"), style: (fg: "#fab387", modifiers: "Bold"))
+                    ),
+
+        (kind: Text(" - ")),
+
+        (kind: Property(Song(Title)), style: (fg: "#f9e2af", modifiers: "Bold"), 
+                        default: (kind: Text("No Song"), style: (modifiers: "Bold"))
+                    ),
+    ],
+
+    align: Center,
+    scroll_speed: 1,
+
+)), vertical_align: top),
+                        (size: "1", pane: Pane(Lyrics), vertical_align: top),
+
+                        ],
+
+                    )),
 
                 (size: "60%", pane: Split(
 
@@ -152,9 +179,9 @@ cava: (
 
                     panes: [
 
-                        (size: "50%", pane: Pane(Queue)),
+                        (size: "75%", pane: Pane(Queue)),
 
-                        (size: "50%", pane: Pane(Cava)),
+                        (size: "25%", pane: Pane(Cava)),
 
                     ],
 
@@ -165,10 +192,10 @@ cava: (
         ),
 
     ),
-        (
-            name: "Artists",
-            pane: Pane(Artists),
-        ),
+ //       (
+ //           name: "Artists",
+ //           pane: Pane(Artists),
+ //       ),
         (
             name: "Albums",
             pane: Pane(Albums),
@@ -177,10 +204,10 @@ cava: (
             name: "Search",
             pane: Pane(Search),
         ),
-        (
-            name: "Directories",
-            pane: Pane(Directories),
-        ),
+//        (
+//            name: "Directories",
+//            pane: Pane(Directories),
+//        ),
         (
             name: "Lyrics",
             pane: Split(
@@ -195,21 +222,33 @@ cava: (
                     direction: Vertical,
 
                     panes: [
+
+                                                    (size: "2%", pane: Pane(Property(
+
+    content: [
+        (kind: Property(Song(Album)), style: (modifiers: "Bold"),
+                        default: (kind: Text("No Album"), style: (modifiers: "Bold"))
+                    ) ,
+    ],
+
+    align: Center,
+    scroll_speed: 1,
+
+)), vertical_align: bottom),
+
+
                         (size: "5%", pane: Pane(Property(
 
     content: [
         (kind: Property(Song(Artist)), style: (fg: "#fab387", modifiers: "Bold"),
                         default: (kind: Text("Unknown"), style: (fg: "#fab387", modifiers: "Bold"))
-                    ) ,
+                    ),
 
         (kind: Text(" - ")),
 
-        (kind: Property(Song(Title)), style: (fg: "#f9e2af", modifiers: "Bold")),
-
-        (kind: Group([
-
-        ])),
-
+        (kind: Property(Song(Title)), style: (fg: "#f9e2af", modifiers: "Bold"), 
+                        default: (kind: Text("No Song"), style: (modifiers: "Bold"))
+                    ),
     ],
 
     align: Center,
