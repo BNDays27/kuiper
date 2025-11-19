@@ -1,6 +1,6 @@
 # only uses the fastfetch image if the terminal is either kitty or tmux, if you don't have either of them and want to use it, add the $TERM value here
 if [[ "$TERM" != "xterm-kitty" && "$TERM" != "tmux-256color" ]]; then
-    fastfetch --config ~/.config/fastfetch/config-no-image.jsonc --logo small
+    fastfetch --config ~/.config/fastfetch/config-no-image.jsonc 
 else
     fastfetch
 fi
@@ -70,7 +70,6 @@ bindkey '^[[1;5D' backward-word
 bindkey '^p' history-substring-search-up
 bindkey '^n' history-substring-search-down
 bindkey '^f' autosuggest-accept
-bindkey '^[[1;5C' autosuggest-accept
 
 ### ZSH aliases
 source ~/.aliases

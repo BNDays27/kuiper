@@ -7,8 +7,8 @@
     draw_borders: true,
     format_tag_separator: " | ",
     browser_column_widths: [20, 38, 42],
-    background_color: None,
-    text_color: None,
+    background_color: "#1e1e2e",
+    text_color: "#cdd6f4",
     header_background_color: None,
     modal_background_color: None,
     modal_backdrop: false,
@@ -39,13 +39,12 @@
         debug: (fg: "light_green", bg: "black"),
         trace: (fg: "magenta", bg: "black"),
     ),
-    progress_bar: (
-        symbols: ["[", "-", "","", "]"],
+  progress_bar: (
+        symbols: ["", "█", "", "█", ""],
         track_style: (fg: "#1e2030"),
-        elapsed_style: (fg: "#cba6f7"),
-        thumb_style: (fg: "#cba6f7", bg: "#1e2030"),
-        use_track_when_empty: true,
-    ),
+        elapsed_style: (fg: "#fab387"),
+        thumb_style: (fg: "#fab387", bg: "#1e1e2e"),
+    ), 
     scrollbar: (
         symbols: ["│", "█", "", "󰅀"],
         track_style: (fg: "#cba6f7"),
@@ -190,7 +189,16 @@ cava: (
     // one of these:
 
     // Every bar symbol will be red
-    bar_color: Single("#cba6f7"),
+    //bar_color: Single("#cba6f7"),
+
+    bar_color: Gradient({
+
+         50: "rgb(137, 180, 250)",
+
+         100: "rgb(203, 166, 247)",
+
+         0: "rgb(166, 227, 161)",
+    }),
   ),
     lyrics: (
         timestamp: false
