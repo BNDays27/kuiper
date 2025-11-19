@@ -176,6 +176,19 @@ cava: (
     scroll_speed: 1,
 
 )), vertical_align: top),
+
+(size: "1", pane: Pane(Property(
+
+    content: [
+        (kind: Property(Status(Elapsed)), style: (modifiers: "Bold"),
+                    ),
+(kind: Text(" / ")),
+    (kind: Property(Song(Duration)), style: (modifiers: "Bold"),
+                    )
+                                ],
+                                    align: Center,)), vertical_align: top),
+
+
                         (size: "1", pane: Pane(Lyrics), vertical_align: top),
 
                         ],
@@ -247,7 +260,7 @@ cava: (
 )), vertical_align: bottom),
 
 
-                        (size: "5%", pane: Pane(Property(
+                        (size: "1", pane: Pane(Property(
 
     content: [
         (kind: Property(Song(Artist)), style: (fg: "#fab387", modifiers: "Bold"),
@@ -265,6 +278,16 @@ cava: (
     scroll_speed: 1,
 
 )), vertical_align: bottom),
+                            (size: "1", pane: Pane(Property(
+
+    content: [
+        (kind: Property(Status(Elapsed)), style: (modifiers: "Bold"),
+                    ),
+(kind: Text(" / ")),
+    (kind: Property(Song(Duration)), style: (modifiers: "Bold"),
+                    )
+                                ],
+                                    align: Center,)), vertical_align: top),
                         ]
 
                     ),), 

@@ -182,7 +182,7 @@ cava: (
     // bottom, "Bottom" is from bottom up, and "Horizontal" is split in the middle with bars going
     // both down and up from there.
     // Using non-default symbols with "Top" and "Horizontal" may produce undesired output.
-    orientation: Bottom,
+    orientation: Horizontal,
 
     // Colors can be configured in three different ways: a single color, different colors
     // per row and a gradient. You can use the same colors as everywhere else. Only specify
@@ -193,11 +193,11 @@ cava: (
 
     bar_color: Gradient({
 
-         50: "rgb(137, 180, 250)",
+         100: "rgb(243, 139, 168)",
 
-         100: "rgb(203, 166, 247)",
+         50: "rgb(203, 166, 247)",
 
-         0: "rgb(166, 227, 161)",
+         0: "rgb(137, 220, 235)",
     }),
   ),
     lyrics: (
