@@ -41,9 +41,9 @@
     ),
   progress_bar: (
         symbols: ["", "█", "", "█", ""],
-        track_style: (fg: "#1e2030"),
+        track_style: (fg: "#181825"),
         elapsed_style: (fg: "#fab387"),
-        thumb_style: (fg: "#fab387", bg: "#1e1e2e"),
+        thumb_style: (fg: "#fab387", bg: "#181825"),
     ), 
     scrollbar: (
         symbols: ["│", "█", "", "󰅀"],
@@ -193,11 +193,14 @@ cava: (
 
     bar_color: Gradient({
 
-         100: "rgb(243, 139, 168)",
-
-         50: "rgb(203, 166, 247)",
-
-         0: "rgb(137, 220, 235)",
+            12: "#94e2d5",
+            24: "#89dceb",
+            36: "#74c7ec",
+            48: "#89b4fa",
+            60: "#cba6f7",
+            72: "#f5c2e7",
+            84: "#eba0ac",
+            100: "#f38ba8",    
     }),
   ),
     lyrics: (

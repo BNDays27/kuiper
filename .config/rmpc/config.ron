@@ -114,8 +114,8 @@
 cava: (
     framerate: 60, // default 60
     autosens: true, // default true
-    sensitivity: 100, // default 100
-    lower_cutoff_freq: 50, // not passed to cava if not provided
+    sensitivity: 150, // default 100
+    lower_cutoff_freq: 0, // not passed to cava if not provided
     higher_cutoff_freq: 10000, // not passed to cava if not provided
     input: (
         method: Fifo,
@@ -147,7 +147,7 @@ cava: (
                 (size: "40%", pane: Split(
                     direction: Vertical,
                     panes: [
-                       (size: "80%", pane: Pane(AlbumArt), vertical_align: top),
+                       (size: "30", pane: Pane(AlbumArt), vertical_align: top),
   
     (size: "1", pane: Pane(Property(
 
@@ -180,11 +180,12 @@ cava: (
 (size: "1", pane: Pane(Property(
 
     content: [
+        (kind: Text("(")),
         (kind: Property(Status(Elapsed)), style: (modifiers: "Bold"),
                     ),
 (kind: Text(" / ")),
-    (kind: Property(Song(Duration)), style: (modifiers: "Bold"),
-                    )
+    (kind: Property(Song(Duration)), style: (modifiers: "Bold")),
+        (kind: Text(")")),
                                 ],
                                     align: Center,)), vertical_align: top),
 
@@ -244,7 +245,7 @@ cava: (
 
                         panes: [
                         
-   (size: "80%", pane: Pane(AlbumArt), vertical_align: Top), 
+   (size: "30", pane: Pane(AlbumArt), vertical_align: Top), 
 
                         (size: "2%", pane: Pane(Property(
 
@@ -281,11 +282,12 @@ cava: (
                             (size: "1", pane: Pane(Property(
 
     content: [
+         (kind: Text("(")),
         (kind: Property(Status(Elapsed)), style: (modifiers: "Bold"),
                     ),
 (kind: Text(" / ")),
-    (kind: Property(Song(Duration)), style: (modifiers: "Bold"),
-                    )
+    (kind: Property(Song(Duration)), style: (modifiers: "Bold")),
+         (kind: Text(")")),
                                 ],
                                     align: Center,)), vertical_align: top),
                         ]
