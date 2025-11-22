@@ -174,8 +174,8 @@ cava: (
     // "Horizontal" and "Top"
     inverted_bar_symbols: ['▔', '🮂', '🮃', '▀', '🮄', '🮅', '🮆', '█'],
 
-    bg_color: "#1e1e2e", // background color, defaults to rmpc's bg color if not provided
-    bar_width: 1, // width of a single bar in columns
+    bg_color: "", // background color, defaults to rmpc's bg color if not provided
+    bar_width: 2, // width of a single bar in columns
     bar_spacing: 1, // free space between bars in columns
 
     // Possible values are "Top", "Bottom" and "Horizontal". Top makes the bars go from top to
@@ -194,11 +194,11 @@ cava: (
     bar_color: Gradient({
 
             12: "#94e2d5",
-            24: "#89dceb",
+            25: "#89dceb",
             36: "#74c7ec",
-            48: "#89b4fa",
+            50: "#89b4fa",
             60: "#cba6f7",
-            72: "#f5c2e7",
+            75: "#f5c2e7",
             84: "#eba0ac",
             100: "#f38ba8",    
     }),
