@@ -12,7 +12,6 @@ read option
 
 if [[ $option = "y" ]]; then
 	echo "cool, have fun!"
-	exit 0
 else
 	echo "well then bye"
 	exit 0
@@ -23,8 +22,8 @@ clear
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
 
 sudo echo "[chaotic-aur]
 Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
@@ -32,7 +31,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Installs all of the dependencies and other stuff I use
-sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc steam hyprpicker wlogout power-profiles-daemon noto-fonts-cjk spotify spicetify-cli spicetify-marketplace papirus-icon-theme sddm mpd-mpris --needed --noconfirm
+sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc steam hyprpicker wlogout power-profiles-daemon noto-fonts-cjk spotify spicetify-cli spicetify-marketplace-bin papirus-icon-theme sddm mpd-mpris openssh --needed --noconfirm
 
 # installing AUR packages with paru
 paru -S btop-theme-catppuccin plymouth-theme-catppuccin-mocha-git papirus-folders-catppuccin-git catppuccin-sddm-theme-mocha --noconfirm --needed
