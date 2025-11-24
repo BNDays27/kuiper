@@ -2,3 +2,9 @@
 .config/mpd/mpd.log
 .config/mpd/mpd.pig
 .config/mpd/mpdstate
+.ssh/aur
+.ssh/aur.pub
+.ssh/github
+.ssh/github.pub
+.ssh/known_hosts
+.ssh/known_hosts.old

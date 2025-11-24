@@ -175,7 +175,7 @@ cava: (
     inverted_bar_symbols: ['▔', '🮂', '🮃', '▀', '🮄', '🮅', '🮆', '█'],
 
     //bg_color: "", // background color, defaults to rmpc's bg color if not provided
-    bar_width: 2, // width of a single bar in columns
+    bar_width: 1, // width of a single bar in columns
     bar_spacing: 1, // free space between bars in columns
 
     // Possible values are "Top", "Bottom" and "Horizontal". Top makes the bars go from top to
