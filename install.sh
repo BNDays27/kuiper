@@ -31,7 +31,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 
 # Installs all of the dependencies and other stuff I use
-sudo pacman -Syu stow plasma kitty konsole flatpak discover dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc steam hyprpicker wlogout power-profiles-daemon noto-fonts-cjk spotify spicetify-cli spicetify-marketplace-bin papirus-icon-theme sddm openssh --needed --noconfirm
+sudo pacman -Syu stow plasma kitty konsole flatpak discover waybar dolphin qt6ct-kde hyprland xdg-desktop-portal-hyprland hyprpaper eww hyprlock zen-browser-bin ungoogled-chromium-bin chromium-extension-web-store chromium-widevine neovim wl-clipboard hyprshot fzf paru-git git jq zsh elisa pipewire-alsa ark unrar unzip wget ttf-jetbrains-mono ttf-jetbrains-mono-nerd btop rocm-smi-lib fastfetch mpd rmpc steam hyprpicker wlogout power-profiles-daemon noto-fonts-cjk spotify spicetify-cli spicetify-marketplace-bin papirus-icon-theme sddm openssh --needed --noconfirm
 
 # installing AUR packages with paru
 paru -S btop-theme-catppuccin plymouth-theme-catppuccin-mocha-git papirus-folders-catppuccin-git catppuccin-sddm-theme-mocha mpdris2--noconfirm --needed
@@ -57,12 +57,12 @@ cd catppuccin-gtk/themes
 # So Flatpaks use the GTK theme
 sudo flatpak override --filesystem=$HOME/.themes
 
-# So mpd and mpd-mpris launch now and on startup
+# So mpd and mpDris2 launch now and on startup
 systemctl enable mpd mpDris2
 systemctl enable --now mpd mpDris2
 
-# changes the shell to zsh, you CAN use bash if you want but I dont use it, so i just have my aliases in there, the OMP theme, the fastfetch thing and that's it
-chsh -s /bin/zsh
+# changes the shell to zsh, you CAN use bash if you want but I dont use it, so i just have most of my aliases in there, the OMP theme, the fastfetch thing and that's it
+chsh -s /usr/bin/zsh
 
 # stows the dotfiles
 cd $SCRIPT_DIR
